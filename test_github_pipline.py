@@ -5,7 +5,7 @@ from webdriver.selenium_webdriver import *
 class Test(unittest.TestCase):
 
     def setUp(self):
-        self.driver = webdriver()
+        self.driver = wd()
 
     def tearDown(self): self.driver.quit()
 

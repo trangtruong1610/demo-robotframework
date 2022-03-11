@@ -36,7 +36,7 @@ def webdriver_docker():
     driver.maximize_window()
     return driver
 
-def webdriver():
-    options = webdriver.Chrome()
+def wd():
+    options = webdriver.FirefoxOptions()
     options.headless = True
-    return webdriver.Chrome(options=options)
+    return webdriver.Firefox(options=options)
