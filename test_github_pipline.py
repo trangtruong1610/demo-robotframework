@@ -10,5 +10,5 @@ class Test(unittest.TestCase):
     def tearDown(self): self.driver.quit()
 
     def test_add_employee(self):
-        self.driver.get('google.com')
+        self.driver.get('https://www.google.com/')
         print('aaa')
