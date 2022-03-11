@@ -42,8 +42,3 @@ jobs:
     - name: Test selenium
       run: |
         pytest -v -s test_github_pipline.py
-#    - name: GitHub Action for pytest
-#      uses: cclauss/GitHub-Action-for-pytest@master
-#      with:
-#        args: pytest -h test_github_pipline.py
-#
