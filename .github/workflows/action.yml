@@ -28,10 +28,10 @@ jobs:
     - name: Set up Chrome
       uses: browser-actions/setup-chrome@latest
     - run:  |
-        which chromedriver
-        chromedriver --version
+#        which chromedriver
+#        chromedriver --version
+#        which chrome
         chrome --version
-        which chrome
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
