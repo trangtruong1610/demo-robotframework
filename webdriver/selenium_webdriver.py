@@ -35,3 +35,8 @@ def webdriver_docker():
     driver.implicitly_wait(IMPLICITLY_WAIT)
     driver.maximize_window()
     return driver
+
+def webdriver():
+    options = webdriver.Chrome()
+    options.headless = True
+    return webdriver.Chrome(options=options)
