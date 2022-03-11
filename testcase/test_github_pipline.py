@@ -5,7 +5,7 @@ from webdriver.selenium_webdriver import *
 class Test(unittest.TestCase):
 
     def setUp(self):
-        self.driver = wd()
+        self.driver = wd_chrome()
 
     def tearDown(self): self.driver.quit()
 
