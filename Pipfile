@@ -9,6 +9,7 @@ robotframework-seleniumlibrary = "*"
 selenium = "*"
 setuptools = "*"
 webdrivermanager = "*"
+webdriver-manager = "*"
 
 [dev-packages]
 

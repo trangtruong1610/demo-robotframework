@@ -1,2 +1,5 @@
+from selenium import webdriver
 
-print('aaa')
+options = webdriver.FirefoxOptions()
+options.headless = True
+webdriver.Firefox(options=options)
