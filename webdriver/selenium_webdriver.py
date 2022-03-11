@@ -9,7 +9,7 @@ def wd_chrome():
     option.headless = True
     driver = webdriver.Chrome(options=option)
     driver.implicitly_wait(IMPLICITLY_WAIT)
-    return
+    return driver
 
 def wd_firefox():
     option = webdriver.FirefoxOptions()
