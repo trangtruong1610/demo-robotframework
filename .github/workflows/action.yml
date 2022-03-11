@@ -33,11 +33,9 @@ jobs:
       run: |
         pytest /testcase/test_github_pipline.py
     - name: GitHub Action for pytest
-        runs-on: ubuntu-latest
-        steps:
-          - uses: actions/checkout@master
-          - name: GitHub Action for pytest
-            uses: cclauss/GitHub-Action-for-pytest@master
-            with:
-              args: pytest -h /testcase/test_github_pipline.py
+      - uses: actions/checkout@master
+      - name: GitHub Action for pytest
+        uses: cclauss/GitHub-Action-for-pytest@master
+        with:
+          args: pytest -h /testcase/test_github_pipline.py
 
