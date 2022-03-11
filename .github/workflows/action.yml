@@ -31,4 +31,13 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Test selenium
       run: |
-        python main.py
+        pytest /testcase/test_github_pipline.py
+    - name: GitHub Action for pytest
+        runs-on: ubuntu-latest
+        steps:
+          - uses: actions/checkout@master
+          - name: GitHub Action for pytest
+            uses: cclauss/GitHub-Action-for-pytest@master
+            with:
+              args: pytest -h /testcase/test_github_pipline.py
+
