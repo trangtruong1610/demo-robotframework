@@ -28,9 +28,6 @@ jobs:
     - name: Set up Chrome
       uses: browser-actions/setup-chrome@latest
     - run:  |
-#        which chromedriver
-#        chromedriver --version
-#        which chrome
         chrome --version
     - name: Install dependencies
       run: |
