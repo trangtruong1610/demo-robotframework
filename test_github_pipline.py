@@ -11,3 +11,4 @@ class Test(unittest.TestCase):
 
     def test_add_employee(self):
         self.driver.get('google.com')
+        print('aaa')
