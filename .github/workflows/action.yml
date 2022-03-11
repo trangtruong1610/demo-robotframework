@@ -35,5 +35,5 @@ jobs:
     - name: GitHub Action for pytest
       uses: cclauss/GitHub-Action-for-pytest@master
       with:
-        args: pytest -h /testcase/test_github_pipline.py
+        args: pytest -h ./testcase/test_github_pipline.py
 
