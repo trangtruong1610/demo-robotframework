@@ -37,6 +37,7 @@ def webdriver_docker():
     return driver
 
 def wd():
-    options = webdriver.Chrome()
+    options = webdriver.ChromeOptions()
     options.headless = True
-    return webdriver.Chrome(options=options)
+    driver = webdriver.Chrome(options)
+    return driver
