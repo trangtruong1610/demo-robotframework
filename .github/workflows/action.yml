@@ -24,7 +24,6 @@ jobs:
         geckodriver --version
         which firefox
         firefox --version
-    - uses: actions/checkout@v2
     - name: Set up Chrome
     - uses: nanasess/setup-chromedriver@v1
       with:
