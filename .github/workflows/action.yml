@@ -39,4 +39,4 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Test selenium
       run: |
-        pytest -v -s ./testcase/test_github_pipline.py
+        pipenv run pytest -v -s ./testcase/test_github_pipline.py
