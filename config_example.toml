@@ -1,0 +1,13 @@
+[node]
+detect-drivers = false
+
+[[node.driver-configuration]]
+display-name = "firefox"
+stereotype = '{"browserName": "chrome", "platformName": "WINDOWS", "browserVersion":"96", "networkname:applicationName":"node_1", "nodename:applicationName":"app_1" }'
+max-sessions = 5
+
+[[node.driver-configuration]]
+display-name = "firefox"
+stereotype = '{"browserName": "firefox", "platformName": "MAC", "browserVersion":"96", "networkname:applicationName":"node_2", "nodename:applicationName":"app_2" }'
+max-sessions = 5
+

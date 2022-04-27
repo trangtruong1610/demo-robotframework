@@ -10,6 +10,7 @@ selenium = "*"
 setuptools = "*"
 webdrivermanager = "*"
 webdriver-manager = "*"
+pytest-xdist = "*"
 
 [dev-packages]
 
