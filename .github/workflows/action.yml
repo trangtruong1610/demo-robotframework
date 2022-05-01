@@ -45,10 +45,9 @@ jobs:
       run: |
         python -m pytest -v -s ./testcase/test_github_pipeline.py
 
-    - name: Test selenium
-      run: |
-        python -m pytest -v -s ./testcase/test_github_pipeline.py
-
-    - name: Test run robot
+    - name: Robot Framework
+      uses: joonvena/robotframework-docker-action@v1.0
+      with:
+        browser: 'chrome'
       run: |
         robot ./testcase/TC2.robot
