@@ -11,6 +11,7 @@ setuptools = "*"
 webdrivermanager = "*"
 webdriver-manager = "*"
 pytest-xdist = "*"
+pytest = "*"
 
 [dev-packages]
 
