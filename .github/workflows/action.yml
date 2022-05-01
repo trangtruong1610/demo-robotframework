@@ -17,7 +17,6 @@ jobs:
       uses: actions/setup-python@v2
       with:
         python-version: 3.8.2
-    - run: which python
 
     - name: Set up Firefox
       run: |
@@ -45,8 +44,6 @@ jobs:
       run: |
         python -m pytest -v -s ./testcase/test_github_pipeline.py
 
-    - name: Checkout
-      uses: actions/checkout@v2
     - name: Robot Framework
       uses: joonvena/robotframework-docker-action@v1.0
       with:
