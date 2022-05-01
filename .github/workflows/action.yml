@@ -48,10 +48,4 @@ jobs:
       uses: joonvena/robotframework-docker-action@v1.0
       with:
         browser: 'chrome'
-        robot_tests_dir: ./testcase/
-
-#    - name: Test robot
-#      run: |
-#        which python
-#        robot ./testcase/TC2.robot
-
+        robot_tests_dir: ./testcase/TC2.robot
