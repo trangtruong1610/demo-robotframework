@@ -45,7 +45,16 @@ jobs:
       run: |
         python -m pytest -v -s ./testcase/test_github_pipeline.py
 
-    - name: Test robot
-      run: |
-        robot ./testcase/TC2.robot
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: Robot Framework
+      uses: joonvena/robotframework-docker-action@v1.0
+      with:
+        browser: 'chrome'
+        robot_tests_dir: ./testcase/TC2.robot
+
+#    - name: Test robot
+#      run: |
+#        which python
+#        robot ./testcase/TC2.robot
 
