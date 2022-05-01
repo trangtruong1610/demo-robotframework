@@ -49,5 +49,8 @@ jobs:
       uses: joonvena/robotframework-docker-action@v1.0
       with:
         browser: 'chrome'
+
+    - name: Test selenium
       run: |
         robot ./testcase/TC2.robot
+
